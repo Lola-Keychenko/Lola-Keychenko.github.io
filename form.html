@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    
+    <div class="container">
+      <nav class="navbar navbar-expand-sm bg-light">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color:black !important; font-weight: bold;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html" style="color:black !important; font-weight: bold;">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="form.html" style="color:black !important; font-weight: bold;">Forms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signup-modal/login.html" style="color:black !important; font-weight: bold;">Sign Up for Modal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tic-tac-toe/tic-tac-toe.html" style="color:black !important; font-weight: bold;">Tic-Tac-Toe</a>
+            </li>
+        </ul>
+        </nav>
+        <form>
+            <div class="form-group">
+                <label for="interestName">Interest Name</label>
+                <input type="text" class="form-control" id="activityName" placeholder="interest name">
+                <label for="textAboutInterest">Text About Interest</label>
+                <textarea class="form-control" id="textAboutInterest"  rows="5" placeholder="enter text"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="imgFile">Upload Local Image:</label><br>
+                    <input type="file" id="imgFile" name="filename">
+                </div>
+                <div class="col">
+                    <label for="sel1">Select # of Tweets to Display</label>
+                    <select class="form-control" id="sel1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div><br>
+            <div class="form-row">
+                <div class="col">
+                    <label for="scale">On a scale of 1-5, how interested in this are you?</label><br>
+                    <label id="scale" class="radio-inline">
+                        <input style="margin-left:10px; margin-right:3px;" type="radio" name="optradio" checked>1
+                      </label>
+                      <label class="radio-inline">
+                        <input style="margin-left:10px; margin-right:3px;" type="radio" name="optradio">2
+                      </label>
+                      <label class="radio-inline">
+                        <input style="margin-left:10px; margin-right:3px;" type="radio" name="optradio">3
+                    </label>
+                    <label class="radio-inline">
+                        <input style="margin-left:10px; margin-right:3px;" type="radio" name="optradio">4
+                    </label>
+                    <label class="radio-inline">
+                        <input style="margin-left:10px; margin-right:3px;" type="radio" name="optradio">5
+                    </label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="username">Login to Finish Submitting</label><br>
+                    <input type="text" class="form-control" id="username" placeholder="Username"><br>
+                    <button class="btn btn-primary">Submit</button>                    
+                </div>
+                <div class="col">
+                    <label for="password">&nbsp;</label><br>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+            </div>
+        </form>
+    </div>
+    </html>
